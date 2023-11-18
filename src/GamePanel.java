@@ -67,9 +67,9 @@ public class GamePanel extends JPanel implements Runnable{
         ball.move();
     }
     public void checkCollision(){
-        File file1 = new File("C:\\Users\\pc\\IdeaProjects\\Pong\\src\\Paddle_Collision.wav");
-        File file2 = new File("C:\\Users\\pc\\IdeaProjects\\Pong\\src\\Wall_Collision.wav");
-        File file3 = new File("C:\\Users\\pc\\IdeaProjects\\Pong\\src\\win.wav");
+        File file1 = new File("src\\sounds\\Paddle_Collision.wav");
+        File file2 = new File("src\\sounds\\Wall_Collision.wav");
+        File file3 = new File("src\\sounds\\win.wav");
         if (ball.y<=0){
             try {
                 AudioInputStream ais = AudioSystem.getAudioInputStream(file2);
